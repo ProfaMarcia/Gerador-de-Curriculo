@@ -1,0 +1,70 @@
+*BANCO DE DADOS*
+
+CREATE DATABASE curriculos CHARACTER SET utf8 COLLATE utf8_general_ci
+
+
+*TABELA PERFIL*
+
+CREATE TABLE perfil ( 
+ id int(5) NOT NULL, 
+ nome varchar(100) NOT NULL, 
+celular varchar(50) NOT NULL, 
+ email varchar(100) NOT NULL,  
+github varchar(100) NOT NULL,  
+escolaridade varchar(50) NOT NULL, 
+ curso varchar(100) NOT NULL,  
+anoconclusao date NOT NULL, 
+ nvidioma varchar(50) NOT NULL, 
+idioma varchar(50) NOT NULL,  
+resumo varchar(500) NOT NULL
+)
+
+*TABELA IMAGEM*
+
+CREATE TABLE imagem (  
+email_cand varchar(100) NOT NULL,  arquivo varchar(100) NOT NULL
+)
+
+
+*TABELA EXPERIÊNCIAS*
+
+CREATE TABLE experiencias ( 
+ email_cand varchar(100) NOT NULL, 
+ anoadm1 varchar(10) NOT NULL,  
+anodem1 varchar(10) NOT NULL,  
+empresa1 varchar(100) NOT NULL, 
+ cargo1 varchar(200) NOT NULL,  
+anoadm2 varchar(10) NOT NULL, 
+ anodem2 varchar(10) NOT NULL, 
+ empresa2 varchar(100) NOT NULL, 
+ cargo2 varchar(200) NOT NULL,  
+anoadm3 varchar(10) NOT NULL,  
+anodem3 varchar(10) NOT NULL,  
+empresa3 varchar(100) NOT NULL, 
+ cargo3 varchar(200) NOT NULL
+)
+
+*TABELA COMPETÊNCIAS*
+
+CREATE TABLE competencias (  
+email_cand varchar(100) NOT NULL,  
+comp1 varchar(100) NOT NULL,  
+comp2 varchar(100) NOT NULL,  
+comp3 varchar(100) NOT NULL,  
+comp4 varchar(100) NOT NULL,  
+comp5 varchar(100) NOT NULL,  
+comp6 varchar(100) NOT NULL
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
