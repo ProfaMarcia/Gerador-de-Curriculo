@@ -6,7 +6,7 @@ CREATE DATABASE curriculos CHARACTER SET utf8 COLLATE utf8_general_ci
 *TABELA PERFIL*
 
 CREATE TABLE perfil ( 
- id int(5) NOT NULL, 
+ id int(5) NOT NULL  AUTO_INCREMENT, 
  nome varchar(100) NOT NULL, 
 celular varchar(50) NOT NULL, 
  email varchar(100) NOT NULL,  
@@ -16,7 +16,8 @@ escolaridade varchar(50) NOT NULL,
 anoconclusao date NOT NULL, 
  nvidioma varchar(50) NOT NULL, 
 idioma varchar(50) NOT NULL,  
-resumo varchar(500) NOT NULL
+resumo varchar(500) NOT NULL,
+PRIMARY KEY (id)
 )
 
 *TABELA IMAGEM*
